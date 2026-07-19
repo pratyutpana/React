@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 import Footer from './components/Footer'
 import {Route,Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Product from './pages/Product'
+import Courses from './pages/Courses'
 import NotFound from './pages/NotFound'
 import Men from './pages/Men'
 import Women from './pages/Women'
 import Kids from './pages/Kids'
+import CoursesDetail from './pages/CoursesDetail'
 
 
 
@@ -17,9 +20,14 @@ const App = () => {
   return (
     <div className="page">
       <Navbar/>
+      <Navbar2/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/courses' element={<Courses/>}/>
+        <Route path='/courses/:id' element={<CoursesDetail/>}/>
+
+
         <Route path='/product' element={<Product/>}>
           <Route path = 'men' element={<Men/>}/>
           <Route path = 'women' element={<Women/>}/>
