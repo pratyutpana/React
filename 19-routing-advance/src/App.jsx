@@ -5,7 +5,11 @@ import {Route,Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import notFound from './pages/NotFound'
+import NotFound from './pages/NotFound'
+import Men from './pages/Men'
+import Women from './pages/Women'
+
+
 
 
 const App = () => {
@@ -16,7 +20,10 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        
+        <Route path = '*' element={<NotFound/>}/>
+        <Route path = 'Men' element={<Men/>}/>
+        <Route path = 'Women' element={<Women/>}/>
+        <Route path = '*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </div>

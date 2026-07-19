@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
-  
+  text-decoration: none;
 }
 
 body{
   height: 100%;
   width: 100%;
   background-color: black;
+  
 }
 
 .nav{
@@ -17,7 +18,7 @@ body{
   justify-content: space-between;
   color: white;
   padding: 10px 20px;
-  background-color: brown;
+  background-color:brown;
   font-size: 23px;
   font-weight:bold;
   align-items: center;
@@ -27,6 +28,7 @@ body{
   display: flex;
   gap: 20px;
   font-size: medium;
+ 
 }
 
 .footer{
@@ -36,7 +38,7 @@ body{
   position: fixed;
   bottom:0%;
   width:100%;
-  background-color: brown;
+  background-color:brown;
   justify-content: center;
   padding: 10px;
 }
@@ -50,3 +52,13 @@ h1{
 
 }
 
+.error h1{
+  color: rgb(169, 82, 82);
+  font-size:55px;
+}
+.categories{
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  gap: 10px;
+}
